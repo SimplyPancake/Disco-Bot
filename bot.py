@@ -1,11 +1,3 @@
-"""
-Copyright © Krypton 2022 - https://github.com/kkrypt0nn (https://krypton.ninja)
-Description:
-This is a template to create your own discord bot in python.
-
-Version: 5.3
-"""
-
 import asyncio
 import json
 import os
@@ -111,7 +103,7 @@ async def status_task() -> None:
     """
     Setup the game status task of the bot
     """
-    statuses = ["with you!", "with Krypton!", "with humans!"]
+    statuses = ["On the IA server!"]
     await bot.change_presence(activity=discord.Game(random.choice(statuses)))
 
 
